@@ -13,10 +13,8 @@ $ ./bootstrap.sh
 ```
 
 Then, you should install Vundler.
-```
-$ vim
-:BundleInstall
-```
+Open Vim and run the following command (normal mode).
+```:BundleInstall```
 
 Thanks.
 
