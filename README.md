@@ -15,7 +15,7 @@ I usually use this dotfiles on my Mac. There may be some problems in other syste
 ## Clone this repository
 ```
 $ cd ~
-$ git clone <REPOSITORY> .dotfiles
+$ git clone git@git.chiyoppy.com:hiroshi.chiyokawa/dotfiles.git .dotfiles
 $ cd .dotfiles
 $ ./bootstrap.sh
 ```
