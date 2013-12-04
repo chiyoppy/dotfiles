@@ -1,7 +1,7 @@
 #!/bin/sh
 
 if [ -f ~/.gitconfig_local ]; then
-    echo "[Warning] .gitconfig_local already exists. This script WILL OVERRIDE it. Press any key to continue..."
+    echo "[Warning] .gitconfig_local already exists. This script WILL OVERRIDE it. Press enter to continue..."
     read is_continue
 fi
 

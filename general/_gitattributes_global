@@ -1,0 +1,9 @@
+*.cpp   diff=cpp
+*.html  diff=html
+*.htm   diff=html
+*.java  diff=java
+*.pl    diff=perl
+*.php   diff=php
+*.py    diff=python
+*.rb    diff=ruby
+*.tex   diff=tex

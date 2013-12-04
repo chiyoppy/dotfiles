@@ -5,7 +5,7 @@ DOTFILES_DIR=~/.dotfiles/
 
 
 # Application Settings
-APPS=zshrc\ vimrc\ gitignore\ gitconfig
+APPS=zshrc\ vimrc\ gitignore\ gitconfig\ gitattributes_global
 
 GENERAL_DIR=${DOTFILES_DIR}'general/'
 
@@ -20,8 +20,8 @@ do
     if [ -f ${LINK_TO} ]; then
       echo Notice: ${LINK_TO} file already exists.
     else
-      echo Linking: ${RC_FILE} ...
       ln -s ${LINK_FROM} ${LINK_TO}
+      echo Linked: ${RC_FILE}
     fi
   else
     echo Error: ${LINK_FROM} file missing.
