@@ -13,6 +13,10 @@ set backspace=indent,eol,start
 set nobackup
 set writebackup
 
+" -- Check PHP Syntax
+autocmd FileType php set makeprg=php\ -l\ %
+autocmd BufWritePost *.php silent make | if len(getqflist()) != 1 | copen | else | cclose | endif
+
 "-- Editor behavior
 set autoindent
 set ts=4
@@ -38,3 +42,4 @@ filetype off
   call vundle#rc()
     Bundle 'itchyny/lightline.vim'
 filetype on
+
