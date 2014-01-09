@@ -1,5 +1,9 @@
 #!/bin/sh
 
+APPS=zshrc\ vimrc\ gitignore\ gitconfig\ gitattributes_global
+DOTFILES_DIR=~/.dotfiles/
+GENERAL_DIR=${DOTFILES_DIR}'general/'
+
 for RC_FILE in ${APPS}
 do
   LINK_FROM=${GENERAL_DIR}_${RC_FILE}

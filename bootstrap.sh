@@ -1,14 +1,13 @@
 #/bin/zsh
 
-# Directory Settings
-DOTFILES_DIR=~/.dotfiles/
-
-# Application Settings
-APPS=zshrc\ vimrc\ gitignore\ gitconfig\ gitattributes_global
-GENERAL_DIR=${DOTFILES_DIR}'general/'
+# check
+if ! [ -f /bin/zsh ]; then
+  echo Install zsh.
+  exit
+fi
 
 # Link rc-files
-./scripts/install_vundle.sh
+./scripts/link_rc_files.sh
 
 # Install Vundle
 ./scripts/install_vundle.sh
