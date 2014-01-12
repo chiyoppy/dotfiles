@@ -32,15 +32,15 @@ zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'c
 setopt auto_pushd
 setopt auto_cd
 
-#-- run ls after cd
-function chpwd() { ls }
-
 #-- alias
 alias ls="ls -G"
 alias gls="gls --color"
 alias df="df -H"
 alias cls=clear
 alias dir=ls
+
+#-- run ls after cd
+function chpwd() { ls }
 
 #-- default editor
 alias -s txt=less
