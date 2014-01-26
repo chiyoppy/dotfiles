@@ -16,6 +16,7 @@ set writebackup
 "-- Editor behavior
 set autoindent
 set ts=4
+set shiftwidth=4
 set expandtab
 set showmatch
 

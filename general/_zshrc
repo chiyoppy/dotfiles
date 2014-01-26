@@ -36,6 +36,9 @@ setopt auto_cd
 alias ls="ls -G"
 alias gls="gls --color"
 alias df="df -H"
+
+#-- joke alias
+alias 'ぎｔ'=git
 alias cls=clear
 alias dir=ls
 
