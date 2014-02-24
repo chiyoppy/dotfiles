@@ -1,12 +1,10 @@
 #!/bin/sh
 
-APPS=zshrc\ vimrc\ gitignore\ gitconfig\ gitattributes_global
-DOTFILES_DIR=~/.dotfiles/
-GENERAL_DIR=${DOTFILES_DIR}'general/'
+RCFILES_DIR=~/.dotfiles/rc_files/
 
-for RC_FILE in ${APPS}
+for RC_FILE in `ls ${RCFILES_DIR}`
 do
-  LINK_FROM=${GENERAL_DIR}_${RC_FILE}
+  LINK_FROM=${RCFILES_DIR}${RC_FILE}
   LINK_TO=~/.${RC_FILE}
 
   if [ -f ${LINK_FROM} ]; then
