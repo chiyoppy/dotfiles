@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 RCFILES_DIR=~/.dotfiles/rc_files/
 
@@ -12,7 +12,7 @@ do
       echo Notice: ${LINK_TO} file already exists
     else
       ln -s ${LINK_FROM} ${LINK_TO}
-      echo Linked: ${RC_FILE}
+      echo Info: ${RC_FILE} linked
     fi
   else
     echo Error: ${LINK_FROM} file missing

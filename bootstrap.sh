@@ -10,7 +10,7 @@ fi
 ./scripts/link_rc_files.sh
 
 # Install Vundle
-./scripts/install_vundle.sh
+./scripts/install_neobundle.sh
 
 # Generate gitconfig_local
 ./scripts/generate_gitconfig_local.sh

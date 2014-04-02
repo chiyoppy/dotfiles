@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Check .gitconfig_local
 if [ -f ~/.gitconfig_local ]; then
