@@ -1,0 +1,2 @@
+# zshrc for Mac
+alias ls="ls -G"

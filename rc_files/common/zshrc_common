@@ -6,7 +6,6 @@ autoload -U compinit
 compinit
 
 #- View
-
 #-- prompt
 PROMPT="%F{green}%n%F{green}%F{magenta} | %F{yello}%m%u%F{green}%F{magenta} | %F{cyan}%~%F{magenta} > %f"
 PROMPT2="%_%% "
@@ -23,7 +22,6 @@ precmd () {
 }
 RPROMPT="%1(v|%F{green}%1v%f|)"
 
-
 #- Coloring
 export TERM=xterm-256color
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
@@ -33,12 +31,9 @@ setopt auto_pushd
 setopt auto_cd
 
 #-- alias
-alias ls="ls -G"
-alias gls="gls --color"
 alias df="df -H"
 
-#-- joke alias
-alias 'ぎｔ'=git
+#-- alias
 alias cls=clear
 alias dir=ls
 
@@ -61,6 +56,3 @@ setopt share_history        # share command history data
 
 #- PATH
 export EDITOR=vim
-
-#- Import local zshrc
-[ -f ~/.zshrc_local ] && source ~/.zshrc_local

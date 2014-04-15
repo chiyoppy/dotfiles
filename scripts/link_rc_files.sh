@@ -2,19 +2,40 @@
 
 RCFILES_DIR=~/.dotfiles/rc_files/
 
-for RC_FILE in `ls ${RCFILES_DIR}`
-do
-  LINK_FROM=${RCFILES_DIR}${RC_FILE}
-  LINK_TO=~/.${RC_FILE}
+function link_rc_files() {
+  RUNNING_DIR=${RCFILES_DIR}${1}/
 
-  if [ -f ${LINK_FROM} ]; then
-    if [ -f ${LINK_TO} ]; then
-      echo Notice: ${LINK_TO} file already exists
+  for RC_FILE in `ls ${RUNNING_DIR}`
+  do
+    LINK_FROM=${RUNNING_DIR}${RC_FILE}
+    LINK_TO=~/.${RC_FILE}
+  
+    if [ -f ${LINK_FROM} ]; then
+      if [ -f ${LINK_TO} ]; then
+        echo Notice: ${LINK_TO} file already exists
+      else
+        ln -s ${LINK_FROM} ${LINK_TO}
+        echo "Info  : ${RC_FILE} linked"
+      fi
     else
-      ln -s ${LINK_FROM} ${LINK_TO}
-      echo Info: ${RC_FILE} linked
+      echo Error: ${LINK_FROM} file missing
     fi
-  else
-    echo Error: ${LINK_FROM} file missing
-  fi
-done
+  done
+}
+
+
+# Common
+link_rc_files common
+
+# OS specific
+case ${OSTYPE} in
+  darwin*)
+    # for Mac
+    link_rc_files mac
+  ;;
+  linux*)
+    # for Linux
+    link_rc_files linux
+  ;;
+  *)
+esac

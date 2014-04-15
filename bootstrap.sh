@@ -1,6 +1,6 @@
 #/bin/zsh
 
-# check
+# check if zsh
 if ! [ -f /bin/zsh ]; then
   echo Install zsh.
   exit
