@@ -1,2 +1,32 @@
 # zshrc for Mac
 alias ls="ls -G"
+
+# Homebrew
+export PATH=/usr/local/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# plenv
+if which plenv > /dev/null; then eval "$(plenv init -)"; fi
+
+# Python
+export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+
+# Scala
+export SCALA_HOME=/usr/local/share/scala
+export PATH=$PATH:$SCALA_HOME/bin
+
+# rmtrash
+alias "rm=rmtrash"
+
+# zsh completions
+fpath = (
+    # zsh-completions
+    /usr/local/share/zsh-completions(N-/)
+
+    # homebrew
+    /usr/local/share/zsh/functions(N-/)
+    )
+export fpath

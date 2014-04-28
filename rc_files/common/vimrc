@@ -12,7 +12,8 @@ NeoBundle 'itchyny/lightline.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'scrooloose/nerdtree'
-NeoBundle 'derekwyatt/vim-scala.git'    " Scala syntax coloring
+NeoBundle 'altercation/vim-colors-solarized' " Default coloring
+NeoBundle 'derekwyatt/vim-scala.git'         " Scala syntax coloring
 
 "   finish
 filetype plugin indent on
@@ -63,3 +64,7 @@ let g:NERDTreeShowHidden=1
 
 " - lightline
 set laststatus=2
+
+" - vim-color-ssolarized
+set background=dark
+colorscheme solarized
