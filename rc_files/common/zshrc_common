@@ -33,10 +33,6 @@ setopt auto_cd
 #-- alias
 alias df="df -H"
 
-#-- alias
-alias cls=clear
-alias dir=ls
-
 #-- run ls after cd
 function chpwd() { ls }
 
