@@ -22,11 +22,5 @@ export PATH=$PATH:$SCALA_HOME/bin
 alias "rm=rmtrash"
 
 # zsh completions
-fpath = (
-    # zsh-completions
-    /usr/local/share/zsh-completions(N-/)
-
-    # homebrew
-    /usr/local/share/zsh/functions(N-/)
-    )
+fpath=( /usr/local/share/zsh-completions(N-/) /usr/local/share/zsh/functions(N-/) )
 export fpath
