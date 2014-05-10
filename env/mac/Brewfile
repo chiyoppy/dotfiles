@@ -62,6 +62,7 @@ cask install firefox
 cask install dropbox
 cask install todoist
 cask install skype
+cask install vlc
 
 # Developer Application
 cask install iterm2
