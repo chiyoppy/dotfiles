@@ -47,6 +47,10 @@ install android-sdk
 # Applications
 install packer
 
+#################
+# Homebrew Cask
+#################
+
 # Install homebrew-cask
 tap phinze/homebrew-cask
 install brew-cask
@@ -63,6 +67,10 @@ cask install dropbox
 cask install todoist
 cask install skype
 cask install vlc
+cask install KeyRemap4MacBook
+
+# Library
+cask install xquartz
 
 # Developer Application
 cask install iterm2
