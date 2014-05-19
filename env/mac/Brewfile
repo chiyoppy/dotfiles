@@ -64,7 +64,6 @@ cask install firefox
 
 # Common Application
 cask install dropbox
-cask install todoist
 cask install skype
 cask install vlc
 cask install KeyRemap4MacBook
