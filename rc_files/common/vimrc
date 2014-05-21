@@ -30,6 +30,7 @@ set backspace=indent,eol,start
 set nobackup
 set writebackup
 set history=50
+autocmd BufWritePre * :%s/\s\+$//e " 行末のスペースを自動で削除
 
 " - indent
 set smartindent
