@@ -7,7 +7,7 @@ compinit
 
 #- View
 #-- prompt
-PROMPT="%F{green}%n%F{green}%F{magenta} | %F{yello}%m%u%F{green}%F{magenta} | %F{cyan}%~%F{magenta} > %f"
+PROMPT="%F{green}%n%F{green}%F{magenta} < %F{yello}%m%u%F{green}%F{magenta} > %F{cyan}%~%F{magenta} ♪  %f"
 PROMPT2="%_%% "
 SPROMPT="%r is correct? [n,y,a,e]: "
 
