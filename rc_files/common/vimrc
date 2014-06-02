@@ -1,4 +1,4 @@
-" Plugins 
+" Plugins
 " - NeoBundle
 if has('vim_starting')
     set nocompatible               " Be iMproved
@@ -49,7 +49,7 @@ syntax on
 set number
 set ruler
 set wrap
-set showcmd 
+set showcmd
 set cursorline
 set smartcase
 set showmatch
@@ -66,6 +66,6 @@ let g:NERDTreeShowHidden=1
 " - lightline
 set laststatus=2
 
-" - vim-color-ssolarized
+" - vim-color-solarized
 set background=dark
 colorscheme solarized
