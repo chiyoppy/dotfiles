@@ -1,33 +1,27 @@
 # Tap dupes and versions
-brew tap homebrew/dupes
-brew tap homebrew/versions
-brew tap homebrew/binary
-brew tap homebrew/homebrew-php
+tap homebrew/dupes
+tap homebrew/binary
+tap homebrew/homebrew-php
 
 # Update homebrew
 update
 
 # Common
 install nmap
-install frackzip
+install fcrackzip
 install youtube-dl
 install lha
 
-install keyremap4macbook
-install pckeyboardhack
-
 # Developer Tool
+install zsh
 install git
 install tig
-
-install vim --override-system-vi --with-lua --with-python3
-install emacs
-
-install zsh
-
 install nkf
 install wget curl
 install heroku
+
+install vim --override-system-vi --with-lua --with-python3
+install emacs
 
 # Language
 install php55
@@ -36,55 +30,17 @@ install go
 install clisp
 install mit-scheme
 install lua
-
-install hadoop
+install node
 
 # Language provided by xxenv
 install rbenv ruby-build
 install plenv perl-build
-install pyenv python-build
 
 # SDK
 install android-sdk
 
 # Applications
 install packer
-
-#################
-# Homebrew Cask
-#################
-
-# Install homebrew-cask
-tap phinze/homebrew-cask
-install brew-cask
-
-# Update homebrew
-update
-
-# Web Browser
-cask install google-chrome
-cask install firefox
-
-# Common Application
-cask install dropbox
-cask install skype
-cask install vlc
-cask install KeyRemap4MacBook
-
-# Library
-cask install xquartz
-
-# Developer Application
-cask install iterm2
-cask install kobito
-cask install sublime-text
-
-# Developer Tool
-cask install java
-cask install virtualbox
-cask install vagrant
-
-# IDE
-cask install intellij-idea
-cask install eclipse
-
+install mysql
+install redis
+install phpmyadmin
