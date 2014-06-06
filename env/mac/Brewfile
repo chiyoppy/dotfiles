@@ -13,6 +13,9 @@ install frackzip
 install youtube-dl
 install lha
 
+install keyremap4macbook
+install pckeyboardhack
+
 # Developer Tool
 install git
 install tig
@@ -23,8 +26,8 @@ install emacs
 install zsh
 
 install nkf
-install wget
-install curl
+install wget curl
+install heroku
 
 # Language
 install php55
