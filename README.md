@@ -27,6 +27,7 @@ $ ./bootstrap.sh
 ### Install NeoBundle
 
 `.vimrc` file uses NeoBundle( https://github.com/Shougo/neobundle.vim )
+
 Open Vim and run the following command in normal mode.
 
 `:NeoBundleInstall`
@@ -34,6 +35,7 @@ Open Vim and run the following command in normal mode.
 ## Included files
 
 ```bash
+.dotfiles
 ├── README.md
 ├── bootstrap.sh
 ├── rc_files
