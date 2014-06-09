@@ -1,40 +1,56 @@
 dotfiles
 ========
 
-# dotfiles
-
 This is my dotfiles.
 
-# Requirements
+## Requirements
 
-- zsh
-- Vim
-- git
+- zsh 5.0.5
+- Vim 7.4
+- git 2.0
 
-I usually use this dotfiles on my Mac. There may be some problems in other systems.
+NOTE: I usually use this dotfiles on my Mac OS X. There may be some problems in other systems.
 
-# Install
+## How to install
 
-## Clone this repository
+Clone this repository and run `bootstrap.sh`.
 
-```
-$ cd ~
-$ git clone git@git.chiyoppy.com:hiroshi.chiyokawa/dotfiles.git .dotfiles
+```bash
+$ cd
+$ git clone ${REPOSITORY_PATH} .dotfiles
 $ cd .dotfiles
+
+# then just run bootstrap.sh
 $ ./bootstrap.sh
 ```
 
-## Setup your gitconfig
+### Install NeoBundle
 
-Enter your name and email address.
+`.vimrc` file uses NeoBundle( https://github.com/Shougo/neobundle.vim )
+Open Vim and run the following command in normal mode.
 
-## Install Vundler
+`:NeoBundleInstall`
 
-Then, you should install Vundler.
-Open Vim and run the following command (normal mode).
+## Included files
 
-`:BundleInstall`
-
-## Copyrights
-
-(c) 2012-2013 Hiroshi Chiyokawa
+```bash
+├── README.md
+├── bootstrap.sh
+├── rc_files
+│   ├── common
+│   │   ├── gemrc
+│   │   ├── gitattributes_global
+│   │   ├── gitconfig
+│   │   ├── gitignore
+│   │   ├── vimrc
+│   │   ├── zshrc
+│   │   └── zshrc_common
+│   ├── linux
+│   │   └── zshrc_env
+│   └── mac
+│       └── zshrc_env
+└── scripts
+    ├── generate_gitconfig_local.sh
+    ├── install_neobundle.sh
+    └── link_rc_files.sh
+```
