@@ -11,6 +11,7 @@ install nmap
 install fcrackzip
 install youtube-dl
 install lha
+install rmtrash
 
 # Developer Tool
 install zsh
