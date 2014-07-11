@@ -1,5 +1,6 @@
 # zshrc for Mac
 alias ls="ls -G"
+alias "flushdns=sudo killall -HUP mDNSResponder"
 
 # Homebrew
 export PATH=/usr/local/bin:$PATH
