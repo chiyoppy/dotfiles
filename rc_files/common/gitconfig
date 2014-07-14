@@ -18,6 +18,8 @@
     ci   = commit -v
     di   = diff
     br   = branch
+    addd = add
+    puhs = push
 [filter "media"]
 	clean  = git-media-clean %f
 	smudge = git-media-smudge %f
