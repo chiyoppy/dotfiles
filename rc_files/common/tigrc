@@ -6,3 +6,21 @@ set vertical-split = yes
 
 # 差分の前後の表示行数（diff-context)を指定
 set diff-context = 6
+
+# リポジトリのGitHubを表示
+bind generic - !@hub browse
+
+# issuesを表示
+# bind generic ^ !@hub browse -- issues
+
+# 選択したcommitをGitHubで表示
+# bind generic ~ !@hub browse -- commit/%(commit)
+
+# 選択したcommitのci-statusを確認
+# bind generic = !hub ci-status %(commit)
+
+# 選択したbranchをcompareに送る
+# bind branch [ !@hub compare %(branch)
+
+# 現在のbranchからpull-requestを作成
+# bind main { !hub pull-request
