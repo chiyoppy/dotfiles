@@ -1,25 +1,25 @@
 [include]
-    path = .gitconfig_local
+  path = ~/.gitconfig_local
 [push]
-    default = current
+  default = current
 [color]
-    diff   = auto
-    status = auto
-    branch = auto
-    grep   = auto
-    ui     = auto
+  diff   = auto
+  status = auto
+  branch = auto
+  grep   = auto
+  ui     = auto
 [core]
-    excludesfile   = .gitignore_global
-    editor         = vim
-    attributesfile = .gitattributes_global
+	excludesfile   = ~/.gitignore_global
+  editor         = vim
+  attributesfile = ~/.gitattributes_global
 [alias]
-    st   = status
-    co   = checkout
-    ci   = commit -v
-    di   = diff
-    br   = branch
-    addd = add
-    puhs = push
+  st   = status
+  co   = checkout
+  ci   = commit -v
+  di   = diff
+  br   = branch
+  addd = add
+  puhs = push
 [filter "media"]
 	clean  = git-media-clean %f
 	smudge = git-media-smudge %f
