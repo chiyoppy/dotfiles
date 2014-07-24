@@ -13,6 +13,6 @@ read email
 
 cat << EOF > ~/.gitconfig_local
 [user]
-    name  = ${name}
-    email = ${email}
+  name  = ${name}
+  email = ${email}
 EOF
