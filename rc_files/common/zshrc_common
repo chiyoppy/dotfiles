@@ -35,6 +35,7 @@ setopt auto_cd
 alias df="df -H"
 alias gti=git
 alias it=git
+alias gitp=git
 
 #-- run ls after cd
 function chpwd() { ls }
