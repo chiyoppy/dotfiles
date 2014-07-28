@@ -7,3 +7,4 @@
 *.py    diff=python
 *.rb    diff=ruby
 *.tex   diff=tex
+*.erb   diff=ruby

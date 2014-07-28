@@ -46,6 +46,10 @@ alias -s c=vi
 alias -s rb=vi
 alias -s php=vi
 alias -s perl=vi
+alias -s erb=vi
+alias -s htm=vi
+alias -s html=vi
+alias -s css=vi
 
 #- History
 HISTFILE=~/.zsh_history
