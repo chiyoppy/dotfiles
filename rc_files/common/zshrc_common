@@ -60,3 +60,4 @@ setopt share_history        # share command history data
 
 #- PATH
 export EDITOR=vim
+export RAILS_ENV=development
