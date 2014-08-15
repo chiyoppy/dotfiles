@@ -18,33 +18,31 @@ NeoBundle 'derekwyatt/vim-scala.git'         " Scala syntax coloring
 "   finish
 filetype plugin indent on
 
-" ---------------------------------------------------------------------------- "
 
 " File Encodings
 set encoding=utf-8
 set fileencodings=utf-8,cp932,euc-jp
 
 " Behavior
-" - vim
 set backspace=indent,eol,start
 set nobackup
 set writebackup
 set history=50
-autocmd BufWritePre * :%s/\s\+$//e " 行末のスペースを自動で削除
-
-" - indent
-set smartindent
-set tabstop=2
-set ts=2
-set shiftwidth=2
-set expandtab
-set autoindent
-
-" - search
 set hlsearch
+autocmd BufWritePre * :%s/\s\+$//e " Truncate line-tail space(s)
+
+set autoindent
+set smartindent
+set expandtab
+
+set tabstop=2
+set shiftwidth=2
+" Override tab size by detecting file type
+augroup filetypedetect
+  au BufNewFile,BufRead *.php  setlocal tabstop=4 shiftwidth=4
+augroup END
 
 " View
-" - general
 syntax on
 set number
 set ruler
@@ -53,6 +51,7 @@ set showcmd
 set cursorline
 set smartcase
 set showmatch
+set laststatus=2
 
 " Pulugin Settings
 " - NERDTree
@@ -63,9 +62,6 @@ imap <silent> <C-e> <Esc> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
 let g:NERDTreeShowHidden=1
 
-" - lightline
-set laststatus=2
-
-" - vim-color-solarized
+" Coloring
 set background=dark
 colorscheme solarized
