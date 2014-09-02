@@ -1,14 +1,12 @@
-# 
+#
 # zshrc
 #
-# Author: Hiroshi Chiyokawa <hiroshi.chiyokawa@gmail.com>
-#
 
-#- Import environment specific zshrc
+# Import environment specific zshrc
 [ -f ~/.zshrc_env ] && source ~/.zshrc_env
 
-#- Import local zshrc
+# Import local zshrc
 [ -f ~/.zshrc_local ] && source ~/.zshrc_local
 
-#- Import common zshrc
+# Import common zshrc
 [ -f ~/.zshrc_env ] && source ~/.zshrc_common
