@@ -1,17 +1,14 @@
-#- Language
 export LANG=ja_JP.UTF-8
+export EDITOR=vim
 
-#- Compinit
 autoload -U compinit
 compinit
 
-#- View
-#-- prompt
 PROMPT="%F{green}%n%F{green}%F{magenta} | %F{yello}%m%u%F{green}%F{magenta} | %F{cyan}%~%F{magenta} ♪  %f"
 PROMPT2="%_%% "
 SPROMPT="%r is correct? [n,y,a,e]: "
 
-#-- display git info
+# display git info
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats '[%b]'
 zstyle ':vcs_info:*' actionformats '[%b|%a]'
@@ -22,26 +19,24 @@ precmd () {
 }
 RPROMPT="%1(v|%F{green}%1v%f|)"
 
-#- Coloring
+# coloring
 export TERM=xterm-256color
 zstyle ':completion:*' list-colors 'di=34' 'ln=35' 'so=32' 'ex=31' 'bd=46;34' 'cd=43;34'
 export LSCOLORS=gxfxbEaEBxxEhEhBaDaCaD
 
-#- Behavior
 setopt auto_pushd
 setopt auto_cd
 
-#-- alias
 alias df="df -H"
 alias gti=git
 alias it=git
 alias gitp=git
 alias ks=ls
 
-#-- run ls after cd
+# run ls after cd
 function chpwd() { ls }
 
-#-- default editor
+# default editors
 alias -s txt=less
 alias -s c=vi
 alias -s rb=vi
@@ -52,13 +47,12 @@ alias -s htm=vi
 alias -s html=vi
 alias -s css=vi
 
-#- History
+# hitory settings
 HISTFILE=~/.zsh_history
 HISTSIZE=100000
 SAVEHIST=100000
-setopt hist_ignore_dups     # ignore duplication command history list
-setopt share_history        # share command history data
+setopt hist_ignore_dups # ignore duplication command history list
+setopt share_history    # share command history data
 
-#- PATH
-export EDITOR=vim
-export RAILS_ENV=development
+export RAILS_ENV=development # default rails environment
+export PYTHONDONTWRITEBYTECODE=1 # do not create pyc file
