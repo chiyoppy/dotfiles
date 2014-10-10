@@ -12,4 +12,4 @@
 [ -f ~/.zshrc_env ] && source ~/.zshrc_common
 
 # Run tmux and exit
-tmux && exit
+# tmux && exit
