@@ -10,3 +10,6 @@
 
 # Import common zshrc
 [ -f ~/.zshrc_env ] && source ~/.zshrc_common
+
+# Run tmux and exit
+tmux && exit
