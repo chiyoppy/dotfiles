@@ -1,11 +1,5 @@
 #/bin/zsh
 
-# check if zsh
-if ! [ -f /bin/zsh ]; then
-  echo Install zsh.
-  exit
-fi
-
 # Link rc-files
 ./scripts/link_rc_files.sh
 
