@@ -5,9 +5,10 @@ This is my dotfiles.
 
 ## Requirements
 
-- zsh 5.0.5
-- Vim 7.4
-- git 2.0
+Homebrew
+├─ zsh >~ 5.0.5
+├─ Vim >~ 7.4
+└─ git >  2.0
 
 NOTE: I usually use this dotfiles on my Mac OS X. There may be some problems in other systems.
 
@@ -36,6 +37,7 @@ Open Vim and run the following command in normal mode.
 
 ```bash
 .dotfiles
+├── LISENCE-MIT.md
 ├── README.md
 ├── bootstrap.sh
 ├── rc_files
@@ -43,7 +45,9 @@ Open Vim and run the following command in normal mode.
 │   │   ├── gemrc
 │   │   ├── gitattributes_global
 │   │   ├── gitconfig
-│   │   ├── gitignore
+│   │   ├── gitignore_global
+│   │   ├── tigrc
+│   │   ├── tmux.conf
 │   │   ├── vimrc
 │   │   ├── zshrc
 │   │   └── zshrc_common
@@ -53,6 +57,8 @@ Open Vim and run the following command in normal mode.
 │       └── zshrc_env
 └── scripts
     ├── generate_gitconfig_local.sh
+    ├── install_brews.sh # install homebrew's brew
     ├── install_neobundle.sh
-    └── link_rc_files.sh
+    ├── link_rc_files.sh
+    └── remove_dotfiles.sh # remove links to this doffiles dir
 ```
