@@ -44,13 +44,11 @@ brew install heroku
 brew install hub
 brew install ttyrec
 
-# Editor
-brew install vim --override-system-vi --with-lua --with-python3
-brew install emacs
 
 # Programming Languages
 brew install php55
 brew install python
+brew install python3
 
 brew install go
 brew install clisp
@@ -61,6 +59,10 @@ brew install node
 # Language provided by xxenv
 brew install rbenv ruby-build
 brew install plenv perl-build
+
+# Editor
+brew install vim --override-system-vi --with-lua --with-python3
+brew install emacs
 
 # Library
 brew install opencv
