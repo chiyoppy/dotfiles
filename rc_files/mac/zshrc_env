@@ -15,9 +15,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # plenv
 if which plenv > /dev/null; then eval "$(plenv init -)"; fi
 
-# Python
-export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
-
 # Scala
 export SCALA_HOME=/usr/local/share/scala
 export PATH=$PATH:$SCALA_HOME/bin
