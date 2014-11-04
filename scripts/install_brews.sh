@@ -23,7 +23,7 @@ brew update
 brew install tree
 brew install unrar
 brew install fcrackzip
-brew install lha # LHA is deprecated archiver, but still exists in the net
+brew install lha # LHA is a deprecated archiver, but still exists in the Net
 brew install youtube-dl
 brew install rmtrash
 brew install nmap
@@ -75,7 +75,7 @@ brew install packer
 brew install mysql
 brew install redis
 brew install phpmyadmin
-
+brew install ansible
 
 echo "
 - install Ruby( rbenv )
