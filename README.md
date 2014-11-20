@@ -5,10 +5,10 @@ This is my dotfiles.
 
 ## Requirements
 
-Homebrew
-├─ zsh >~ 5.0.5
-├─ Vim >~ 7.4
-└─ git >  2.0
+- Homebrew
+- zsh >~ 5.0.5
+- Vim >~ 7.4
+- git >  2.0
 
 NOTE: I usually use this dotfiles on my Mac OS X. There may be some problems in other systems.
 
