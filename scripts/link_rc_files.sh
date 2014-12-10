@@ -9,16 +9,16 @@ function link_rc_files() {
   do
     LINK_FROM=${RUNNING_DIR}${RC_FILE}
     LINK_TO=~/.${RC_FILE}
-  
+
     if [ -f ${LINK_FROM} ]; then
       if [ -f ${LINK_TO} ]; then
-        echo Notice: ${LINK_TO} file already exists
+        echo [Notice] ${LINK_TO} file already exists
       else
         ln -s ${LINK_FROM} ${LINK_TO}
-        echo "Info  : ${RC_FILE} linked"
+        echo [Info] ${RC_FILE} linked
       fi
     else
-      echo Error: ${LINK_FROM} file missing
+      echo [Error] ${LINK_FROM} file missing
     fi
   done
 }
@@ -27,7 +27,7 @@ function link_rc_files() {
 # Common
 link_rc_files common
 
-# OS specific
+# Run OS specific link script
 case ${OSTYPE} in
   darwin*)
     # for Mac

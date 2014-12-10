@@ -2,7 +2,7 @@
 
 # Check .gitconfig_local
 if [ -f ~/.gitconfig_local ]; then
-  echo Notice: ~/.gitconfig_local file already exists
+  echo [Notice] ~/.gitconfig_local file already exists
   exit
 fi
 

@@ -4,9 +4,9 @@
 # install brews
 #
 
-# Check if homebrew is certainly installed
+# Check if homebrew has been installed on this system
 if ! [ "type brew" ]; then
-  echo "Error: Install Homebrew first."
+  echo [Error] Install Homebrew first.
   exit
 fi
 

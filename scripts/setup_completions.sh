@@ -7,4 +7,3 @@ fi
 mkdir ${HOME}/.zsh
 git clone git://github.com/zsh-users/zsh-completions.git ${HOME}/.zsh/zsh-completions
 
-
