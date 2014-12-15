@@ -40,10 +40,10 @@ brew install wget curl
 
 # Toolbelts
 brew install ffmpeg
+brew install imagemagick
 brew install heroku
 brew install hub
 brew install ttyrec
-
 
 # Programming Languages
 brew install php55
@@ -84,3 +84,4 @@ echo "
   - install Task::Plack
 - setup homebrew-php
 "
+
