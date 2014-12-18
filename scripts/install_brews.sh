@@ -16,8 +16,9 @@ brew tap homebrew/binary
 brew tap homebrew/science
 brew tap homebrew/homebrew-php
 
-# Update homebrew
+# Update and upgrade brews
 brew update
+brew upgrade
 
 # Common Tools
 brew install tree
