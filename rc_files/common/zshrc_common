@@ -42,7 +42,7 @@ function chpwd() { ls }
 
 # default editors
 alias -s txt=less
-vim_ext=(c rb php perl erb htm html css ini)
+vim_ext=(c rb php perl erb htm html css ini py)
 for t in $vim_ext; do
   alias -s $t=vim
 done
