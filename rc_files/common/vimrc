@@ -82,7 +82,16 @@ let g:NERDTreeShowHidden=1
 
 " Coloring
 set background=dark
-colorscheme solarized
+try
+  colorscheme solarized
+catch
+endtry
+
+" color support to fix 80 column problem lol
+if (exists('+colorcolumn'))
+  set colorcolumn=80
+  highlight ColorColumn ctermbg=9
+endif
 
 " Shoug/neocomplete
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
