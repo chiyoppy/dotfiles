@@ -27,6 +27,7 @@ NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'altercation/vim-colors-solarized' " Default coloring
 NeoBundle 'derekwyatt/vim-scala.git'         " Scala syntax coloring
 NeoBundle 'mrk21/yaml-vim'
+NeoBundle 'junegunn/vim-easy-align'
 
 call neobundle#end()
 
