@@ -72,8 +72,8 @@ endtry
 
 " color support to fix 80 column problem lol
 if (exists('+colorcolumn'))
-  set colorcolumn=80
-  highlight ColorColumn ctermbg=9
+  set colorcolumn=120
+  highlight ColorColumn ctermbg = 239
 endif
 
 " Shoug/neocomplete
