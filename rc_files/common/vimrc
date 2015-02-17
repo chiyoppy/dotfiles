@@ -3,35 +3,25 @@ if !1 | finish | endif
 
 if has('vim_starting')
   set nocompatible               " Be iMproved
-
-  " Required:
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-" Required:
 call neobundle#begin(expand('~/.vim/bundle/'))
 
-" Let NeoBundle manage NeoBundle
-" Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-" Note: You don't set neobundle setting in .gvimrc!
-
 NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'Yggdroot/indentLine'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
 NeoBundle 'Shougo/neocomplete'
-NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'altercation/vim-colors-solarized' " Default coloring
 NeoBundle 'derekwyatt/vim-scala.git'         " Scala syntax coloring
 NeoBundle 'mrk21/yaml-vim'
 NeoBundle 'junegunn/vim-easy-align'
 
 call neobundle#end()
-
-" Required:
 filetype plugin indent on
 
 " If there are uninstalled bundles found on startup,
@@ -71,15 +61,6 @@ set cursorline
 set smartcase
 set showmatch
 set laststatus=2
-
-" Pulugin Settings
-" - NERDTree
-nmap <silent> <C-e> :NERDTreeToggle<CR>
-vmap <silent> <C-e> <Esc> :NERDTreeToggle<CR>
-omap <silent> <C-e> :NERDTreeToggle<CR>
-imap <silent> <C-e> <Esc> :NERDTreeToggle<CR>
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
-let g:NERDTreeShowHidden=1
 
 " Coloring
 set background=dark
@@ -142,6 +123,12 @@ inoremap <expr><C-e>  neocomplete#cancel_popup()
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
+
+" indentLine
+let g:indentLine_color_term = 239
+
+" vimfiler
+nnoremap <leader>e :VimFilerExplore -split -winwidth=30 -find -no-quit<Cr>
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
