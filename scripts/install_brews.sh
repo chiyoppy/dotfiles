@@ -21,29 +21,26 @@ brew update
 brew upgrade
 
 # Common Tools
+brew install rmtrash
 brew install tree
 brew install unrar
-brew install fcrackzip
 brew install lha # LHA is a deprecated archiver, but still exists in the Net
-brew install youtube-dl
-brew install rmtrash
+brew install fcrackzip
 brew install nmap
-brew install ag
+brew install ffmpeg
 
 # Developer Tools
 brew install zsh
+brew install ag
+brew install git tig
 brew install tmux
-
-brew install git
-brew install tig
-
 brew install nkf
 brew install wget curl
+brew install youtube-dl
 
 # Toolbelts
-brew install ffmpeg
-brew install imagemagick
 brew install heroku
+brew install imagemagick
 brew install hub
 brew install ttyrec
 
@@ -51,7 +48,6 @@ brew install ttyrec
 brew install php55
 brew install python
 brew install python3
-
 brew install go
 brew install clisp
 brew install mit-scheme
@@ -69,15 +65,16 @@ brew install emacs
 # Library
 brew install opencv
 
-# Application SDK
-brew install android-sdk
-
 # Applications
 brew install packer
 brew install mysql
 brew install redis
 brew install phpmyadmin
 brew install ansible
+
+# Application SDK
+brew install android-sdk
+
 
 echo "
 - install Ruby( rbenv )
