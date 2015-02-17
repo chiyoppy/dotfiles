@@ -127,8 +127,8 @@ inoremap (<Enter> ()<Left><CR><ESC><S-o>
 " indentLine
 let g:indentLine_color_term = 239
 
-" vimfilter
-nnoremap <leader>e :VimFilerExplore -split -winwidth=30 -find -no-quit<Cr>
+" VimFiler
+let g:vimfiler_as_default_explorer = 1
 
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
