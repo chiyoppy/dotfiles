@@ -23,11 +23,10 @@ brew upgrade
 # Common Tools
 brew install rmtrash
 brew install tree
-brew install unrar
-brew install lha # LHA is a deprecated archiver, but still exists in the Net
+brew install unrar lha
 brew install fcrackzip
-brew install nmap
 brew install ffmpeg
+brew install youtube-dl
 
 # Developer Tools
 brew install zsh
@@ -36,16 +35,16 @@ brew install git tig
 brew install tmux
 brew install nkf
 brew install wget curl
-brew install youtube-dl
+brew install nmap
+brew install ttyrec
 
 # Toolbelts
 brew install heroku
-brew install imagemagick
 brew install hub
-brew install ttyrec
 
 # Programming Languages
 brew install php56
+brew install perl
 brew install python
 brew install python3
 brew install go
@@ -56,13 +55,13 @@ brew install node
 
 # Language provided by xxenv
 brew install rbenv ruby-build
-brew install plenv perl-build
 
 # Editor
 brew install vim --override-system-vi --with-lua --with-python3
 brew install emacs
 
 # Library
+brew install imagemagick
 brew install opencv
 
 # Applications
