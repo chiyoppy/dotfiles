@@ -45,7 +45,7 @@ brew install hub
 brew install ttyrec
 
 # Programming Languages
-brew install php55
+brew install php56
 brew install python
 brew install python3
 brew install go
