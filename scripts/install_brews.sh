@@ -28,6 +28,7 @@ brew install lha # LHA is a deprecated archiver, but still exists in the Net
 brew install youtube-dl
 brew install rmtrash
 brew install nmap
+brew install ag
 
 # Developer Tools
 brew install zsh
