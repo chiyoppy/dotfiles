@@ -127,7 +127,7 @@ inoremap (<Enter> ()<Left><CR><ESC><S-o>
 " indentLine
 let g:indentLine_color_term = 239
 
-" vimfiler
+" vimfilter
 nnoremap <leader>e :VimFilerExplore -split -winwidth=30 -find -no-quit<Cr>
 
 " Enable omni completion.
