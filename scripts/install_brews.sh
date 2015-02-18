@@ -44,7 +44,6 @@ brew install hub
 
 # Programming Languages
 brew install php56
-brew install perl
 brew install python
 brew install python3
 brew install go
@@ -77,9 +76,6 @@ brew install android-sdk
 
 echo "
 - install Ruby( rbenv )
-- install Perl( plenv )
-  - install cpanm
-  - install Task::Plack
 - setup homebrew-php
 "
 
