@@ -9,8 +9,8 @@ export PATH=/usr/local/sbin:$PATH
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-# plenv
-if which plenv > /dev/null; then eval "$(plenv init -)"; fi
+# php
+export PATH="$(brew --prefix homebrew/php/php56)/bin:$PATH"
 
 # Scala
 export SCALA_HOME=/usr/local/share/scala
