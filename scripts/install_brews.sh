@@ -30,6 +30,7 @@ brew install youtube-dl
 
 # Developer Tools
 brew install zsh
+brew install peco
 brew install ag
 brew install git tig
 brew install tmux
