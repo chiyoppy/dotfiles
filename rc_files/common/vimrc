@@ -1,4 +1,6 @@
-" Note: Skip initialization for vim-tiny or vim-small.
+" -----------------------------------------------------------------------------
+"  NeoBundle
+"
 if !1 | finish | endif
 
 if has('vim_starting')
@@ -7,7 +9,6 @@ if has('vim_starting')
 endif
 
 call neobundle#begin(expand('~/.vim/bundle/'))
-
 NeoBundleFetch 'Shougo/neobundle.vim'
 
 NeoBundle 'itchyny/lightline.vim'
@@ -25,10 +26,11 @@ NeoBundle 'junegunn/vim-easy-align'
 call neobundle#end()
 filetype plugin indent on
 
-" If there are uninstalled bundles found on startup,
-" this will conveniently prompt you to install them.
 NeoBundleCheck
 
+" -----------------------------------------------------------------------------
+"  Common Settings
+"
 " File Encodings
 set encoding=utf-8
 set fileencodings=utf-8,cp932,euc-jp
@@ -44,7 +46,6 @@ autocmd BufWritePre * :%s/\s\+$//e " Truncate line-tail space(s)
 set autoindent
 set smartindent
 set expandtab
-
 set tabstop=2
 set shiftwidth=2
 " Override tab size by detecting file type
@@ -76,8 +77,9 @@ if (exists('+colorcolumn'))
   highlight ColorColumn ctermbg = 239
 endif
 
-" Shoug/neocomplete
-"Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
+" -----------------------------------------------------------------------------
+" neocomplete
+"
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplete.
@@ -125,12 +127,6 @@ inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap [<Enter> []<Left><CR><ESC><S-o>
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
-" indentLine
-let g:indentLine_color_term = 239
-
-" VimFiler
-let g:vimfiler_as_default_explorer = 1
-
 " Enable omni completion.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
@@ -149,3 +145,18 @@ let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+" -----------------------------------------------------------------------------
+" vim-easy-align
+"
+vmap <Enter> <Plug>(EasyAlign)
+
+" -----------------------------------------------------------------------------
+" indentLine
+"
+let g:indentLine_color_term = 239
+
+" -----------------------------------------------------------------------------
+" VimFiler
+"
+let g:vimfiler_as_default_explorer = 1
