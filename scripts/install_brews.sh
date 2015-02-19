@@ -57,7 +57,7 @@ brew install node
 brew install rbenv ruby-build
 
 # Editor
-brew install vim --override-system-vi --with-lua --with-python --with-python3 --with-ruby
+brew install vim --override-system-vi --with-lua --with-python3
 brew install emacs
 
 # Library
