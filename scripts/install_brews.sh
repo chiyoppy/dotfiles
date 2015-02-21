@@ -47,6 +47,7 @@ brew install hub
 brew install php56
 brew install python
 brew install python3
+brew install scala
 brew install go
 brew install clisp
 brew install mit-scheme
