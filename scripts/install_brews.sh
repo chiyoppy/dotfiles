@@ -50,7 +50,6 @@ brew install python3
 brew install scala
 brew install go
 brew install clisp
-brew install mit-scheme
 brew install lua
 brew install node
 
