@@ -35,6 +35,7 @@ alias df="df -H"
 alias gti=git
 alias it=git
 alias gitp=git
+alias got=git
 alias g=git
 alias ks=ls
 
