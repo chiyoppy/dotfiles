@@ -6,6 +6,9 @@ alias "flushdns=sudo killall -HUP mDNSResponder"
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
+# Vagrant
+alias v=vagrant
+
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
