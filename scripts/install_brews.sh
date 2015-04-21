@@ -27,6 +27,7 @@ brew install unrar lha
 brew install fcrackzip
 brew install ffmpeg
 brew install youtube-dl
+brew install jq
 
 # Developer Tools
 brew install zsh
