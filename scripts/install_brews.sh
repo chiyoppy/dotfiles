@@ -18,7 +18,7 @@ brew tap homebrew/homebrew-php
 
 # Update and upgrade brews
 brew update
-brew upgrade
+brew upgrade --all
 
 # Common Tools
 brew install rmtrash
