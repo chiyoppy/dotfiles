@@ -46,6 +46,7 @@ brew install hub
 
 # Programming Languages
 brew install php56
+brew install homebrew/php/composer
 brew install python
 brew install python3
 brew install scala
