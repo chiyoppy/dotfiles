@@ -14,7 +14,6 @@ fi
 brew tap homebrew/dupes
 brew tap homebrew/binary
 brew tap homebrew/science
-brew tap homebrew/homebrew-php
 
 # Update and upgrade brews
 brew update
