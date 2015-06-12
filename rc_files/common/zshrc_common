@@ -58,9 +58,3 @@ setopt share_history    # share command history data
 
 export RAILS_ENV=development # default rails environment
 export PYTHONDONTWRITEBYTECODE=1 # do not create pyc file
-
-# ezoe proxy
-# http://cpplover.blogspot.jp/2015/05/blog-post_28.html
-command_not_found_handler() {
-  echo "コマンドではない。"
-}
