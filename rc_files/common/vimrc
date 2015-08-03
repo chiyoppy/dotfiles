@@ -29,8 +29,9 @@ NeoBundle 'Shougo/vimproc.vim', {
 \  }
 NeoBundle 'altercation/vim-colors-solarized' " Default coloring
 NeoBundle 'derekwyatt/vim-scala.git'         " Scala syntax coloring
-NeoBundle 'mrk21/yaml-vim'
+" NeoBundle 'mrk21/yaml-vim'
 NeoBundle 'junegunn/vim-easy-align'
+NeoBundle 'chase/vim-ansible-yaml'
 
 call neobundle#end()
 filetype plugin indent on
