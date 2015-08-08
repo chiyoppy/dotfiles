@@ -19,6 +19,9 @@ export PATH=$PATH:$SCALA_HOME/bin
 # Android SDK
 export ANDROID_HOME=/usr/local/opt/android-sdk
 
+# PHP composer
+export PATH=~/.composer/vendor/bin:$PATH
+
 # rmtrash
 alias "rm=rmtrash"
 
