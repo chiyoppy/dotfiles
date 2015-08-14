@@ -10,7 +10,7 @@ This is my dotfiles.
 - Vim >~ 7.4
 - git >  2.0
 
-NOTE: I usually use this dotfiles on my Mac OS X. There may be some problems in other systems.
+NOTE: I usually use this dotfiles on Mac OS X. There may be some problems in other systems.
 
 ## How to install
 
