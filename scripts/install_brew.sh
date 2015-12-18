@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #
-# install brews
+# install brew
 #
 
 # Check if homebrew has been installed on this system
@@ -10,16 +10,16 @@ if ! [ "type brew" ]; then
   exit
 fi
 
-# Tap dupes and versions
+# Tap dupe and version
 brew tap homebrew/dupes
 brew tap homebrew/binary
 brew tap homebrew/science
 
-# Update and upgrade brews
+# Upgrade brews
 brew update
 brew upgrade --all
 
-# Common Tools
+# Common Tool
 brew install rmtrash
 brew install tree
 brew install unrar lha
@@ -28,7 +28,7 @@ brew install ffmpeg
 brew install youtube-dl
 brew install jq
 
-# Developer Tools
+# Developer Tool
 brew install zsh
 brew install peco
 brew install ag
@@ -39,11 +39,11 @@ brew install wget curl
 brew install nmap
 brew install ttyrec
 
-# Toolbelts
+# Toolbelt
 brew install heroku
 brew install hub
 
-# Programming Languages
+# Programming Language
 brew install php56
 brew install homebrew/php/composer
 brew install python
@@ -55,7 +55,7 @@ brew install clisp
 brew install lua
 brew install node
 
-# Library managers
+# Library manager
 brew install maven
 
 # Language provided by xxenv
@@ -69,7 +69,7 @@ brew install emacs
 brew install imagemagick
 brew install opencv
 
-# Applications
+# Application
 brew install packer
 brew install mysql
 brew install redis

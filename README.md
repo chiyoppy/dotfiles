@@ -36,29 +36,4 @@ Open Vim and run the following command in normal mode.
 ## Included files
 
 ```bash
-.dotfiles
-├── LISENCE-MIT.md
-├── README.md
-├── bootstrap.sh
-├── rc_files
-│   ├── common
-│   │   ├── gemrc
-│   │   ├── gitattributes_global
-│   │   ├── gitconfig
-│   │   ├── gitignore_global
-│   │   ├── tigrc
-│   │   ├── tmux.conf
-│   │   ├── vimrc
-│   │   ├── zshrc
-│   │   └── zshrc_common
-│   ├── linux
-│   │   └── zshrc_env
-│   └── mac
-│       └── zshrc_env
-└── scripts
-    ├── generate_gitconfig_local.sh
-    ├── install_brews.sh # install homebrew's brew
-    ├── install_neobundle.sh
-    ├── link_rc_files.sh
-    └── remove_dotfiles.sh # remove links to this doffiles dir
 ```
