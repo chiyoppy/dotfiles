@@ -55,6 +55,9 @@ brew install clisp
 brew install lua
 brew install node
 
+# Library managers
+brew install maven
+
 # Language provided by xxenv
 brew install rbenv ruby-build
 
