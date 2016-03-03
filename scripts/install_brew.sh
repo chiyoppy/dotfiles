@@ -17,6 +17,7 @@ brew tap homebrew/science
 
 # Upgrade brews
 brew update
+brew cleanup
 brew upgrade --all
 
 # Common Tool
