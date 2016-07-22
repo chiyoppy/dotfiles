@@ -1,6 +1,9 @@
-# Mac OS X #
-############
+# MacOS
 .DS_Store
 Thumbs.db
 *~
 *.swp
+
+# IntelliJ
+.idea
+
