@@ -20,6 +20,7 @@
   addd  = add
   puhs  = push
   ush   = push
+  psuh  = push
   ull   = pull
   comit = commit
   pr    = pull --rebase
