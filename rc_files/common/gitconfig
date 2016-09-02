@@ -23,6 +23,7 @@
   ull   = pull
   comit = commit
   pr    = pull --rebase
+  ch    = cherry-pick
 [filter "media"]
   clean  = git-media-clean %f
   smudge = git-media-smudge %f
