@@ -38,6 +38,8 @@ alias gitp=git
 alias got=git
 alias g=git
 alias ks=ls
+alias bim=vim
+alias ex=vim
 
 # run ls after cd
 function chpwd() { ls }

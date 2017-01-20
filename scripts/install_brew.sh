@@ -17,7 +17,7 @@ brew tap homebrew/science
 
 # Upgrade brews
 brew update
-brew upgrade --all
+brew upgrade
 
 # Common Tool
 brew install rmtrash
@@ -44,7 +44,7 @@ brew install heroku
 brew install hub
 
 # Programming Language
-brew install php70
+brew install homebrew/php/php70
 brew install python
 brew install python3
 brew install scala
