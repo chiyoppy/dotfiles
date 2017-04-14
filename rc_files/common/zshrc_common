@@ -37,6 +37,7 @@ alias it=git
 alias gitp=git
 alias got=git
 alias g=git
+alias gp=git
 alias ks=ls
 alias bim=vim
 alias ex=vim
