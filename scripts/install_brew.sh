@@ -44,7 +44,7 @@ brew install heroku
 brew install hub
 
 # Programming Language
-brew install homebrew/php/php70
+brew install homebrew/php/php71
 brew install python
 brew install python3
 brew install scala
