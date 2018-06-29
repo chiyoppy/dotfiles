@@ -20,7 +20,7 @@ NeoBundle 'Shougo/neocomplete'
 NeoBundle 'Shougo/vimfiler.vim'
 NeoBundle 'altercation/vim-colors-solarized' " Default coloring
 NeoBundle 'derekwyatt/vim-scala.git'         " Scala syntax coloring
-" NeoBundle 'mrk21/yaml-vim'
+NeoBundle 'fatih/vim-go'
 NeoBundle 'junegunn/vim-easy-align'
 NeoBundle 'chase/vim-ansible-yaml'
 
