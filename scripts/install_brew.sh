@@ -61,7 +61,7 @@ brew install maven
 brew install rbenv ruby-build
 
 # Editor
-brew install vim --override-system-vi --with-lua --with-python3
+brew install vim --with-gettext --with-lua --with-override-system-vi
 brew install emacs
 
 # Library
