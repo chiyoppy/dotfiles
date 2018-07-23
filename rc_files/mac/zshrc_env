@@ -17,10 +17,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Scala
 export SCALA_HOME=/usr/local/share/scala
-export PATH=$PATH:$SCALA_HOME/bin
-
-# Android SDK
-export ANDROID_HOME=/usr/local/opt/android-sdk
+export PATH=$SCALA_HOME/bin:$PATH
 
 # PHP composer
 export PATH=~/.composer/vendor/bin:$PATH
@@ -31,9 +28,6 @@ alias "rm=rmtrash"
 # zsh completions
 fpath=( /usr/local/share/zsh-completions(N-/) /usr/local/share/zsh/functions(N-/) )
 export fpath
-
-# useful alias
-alias "vssh=vagrant ssh"
 
 # peco
 function peco-select-history() {
@@ -51,4 +45,3 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
-
