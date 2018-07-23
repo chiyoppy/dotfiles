@@ -10,13 +10,7 @@ if ! [ "type brew" ]; then
   exit
 fi
 
-# Tap dupe and version
-brew tap homebrew/dupes
-brew tap homebrew/binary
-brew tap homebrew/science
-
 # Upgrade brews
-brew update
 brew upgrade
 
 # Common Tool
@@ -39,18 +33,12 @@ brew install wget curl
 brew install nmap
 brew install ttyrec
 
-# Toolbelt
-brew install heroku
-brew install hub
-
 # Programming Language
-brew install homebrew/php/php71
-brew install python
+brew install php
 brew install python3
 brew install scala
 brew install sbt
 brew install go
-brew install clisp
 brew install lua
 brew install node
 
@@ -64,19 +52,12 @@ brew install rbenv ruby-build
 brew install vim --with-gettext --with-lua --with-override-system-vi
 brew install emacs
 
-# Library
-brew install imagemagick
-brew install opencv
-
 # Application
-brew install packer
 brew install mysql
 brew install redis
 brew install phpmyadmin
-brew install ansible
 
-# Application SDK
-brew install android-sdk
+brew cleanup
 
 echo "
 - install Ruby( rbenv )
