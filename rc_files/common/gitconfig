@@ -25,6 +25,7 @@
   comit = commit
   pr    = pull --rebase
   ch    = cherry-pick
+  alias = !git config --get-regexp '^alias\\.' | sed 's/alias\\.\\([^ ]*\\) \\(.*\\)/\\1\\\t => \\2/' | sort
 [filter "media"]
   clean  = git-media-clean %f
   smudge = git-media-smudge %f
