@@ -12,6 +12,10 @@ export PATH=/usr/local/sbin:$PATH
 # Vagrant
 alias v=vagrant
 
+# golang
+export GOPATH=$HOME/go
+export PATH=$PATH:$(go env GOPATH)/bin
+
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
