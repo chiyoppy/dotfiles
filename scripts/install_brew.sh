@@ -49,7 +49,7 @@ brew install maven
 brew install rbenv ruby-build
 
 # Editor
-brew install vim --with-gettext --with-lua --with-override-system-vi
+brew install vim --with-gettext --with-luajit --with-override-system-vi
 brew install emacs
 
 # Application
