@@ -40,7 +40,7 @@ brew install scala
 brew install sbt
 brew install go
 brew install lua
-brew install node
+brew install nodebrew
 
 # Library manager
 brew install maven
