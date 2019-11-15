@@ -32,6 +32,7 @@ brew install nkf
 brew install wget curl
 brew install nmap
 brew install ttyrec
+brew install yarn
 
 # Programming Language
 brew install php
