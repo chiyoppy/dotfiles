@@ -51,18 +51,5 @@ brew install maven
 brew install rbenv ruby-build
 
 # Editor
-brew install vim --with-gettext --with-lua --with-override-system-vi
+brew install vim
 brew install emacs
-
-# Application
-brew install mysql
-brew install redis
-brew install phpmyadmin
-
-brew cleanup
-
-echo "
-- install Ruby( rbenv )
-- setup homebrew-php
-"
-
