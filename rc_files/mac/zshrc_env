@@ -9,22 +9,15 @@ alias "flushdns=sudo killall -HUP mDNSResponder"
 export PATH=/usr/local/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 
-# Vagrant
-alias v=vagrant
-
 # golang
 export GOPATH=$HOME/go
 export PATH=$PATH:$(go env GOPATH)/bin
 
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# Scala
-export SCALA_HOME=/usr/local/share/scala
-export PATH=$SCALA_HOME/bin:$PATH
-
 # PHP composer
 export PATH=~/.composer/vendor/bin:$PATH
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # rmtrash
 alias "rm=rmtrash"
@@ -49,6 +42,3 @@ function peco-select-history() {
 }
 zle -N peco-select-history
 bindkey '^r' peco-select-history
-
-# nodebrew
-export PATH=$HOME/.nodebrew/current/bin:$PATH
