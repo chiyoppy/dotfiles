@@ -4,7 +4,7 @@
 ./scripts/link_rc_files.sh
 
 # Install Vundle
-./scripts/install_neobundle.sh
+./scripts/install_dein_vim.sh
 
 # Generate gitconfig_local
 ./scripts/generate_gitconfig_local.sh
