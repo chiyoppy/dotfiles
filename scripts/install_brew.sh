@@ -14,9 +14,7 @@ fi
 brew upgrade
 
 # Common Tool
-brew install rmtrash
 brew install tree
-brew install unrar lha
 brew install fcrackzip
 brew install ffmpeg
 brew install youtube-dl
