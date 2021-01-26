@@ -19,6 +19,7 @@ brew install fcrackzip
 brew install ffmpeg
 brew install youtube-dl
 brew install jq
+brew install trash
 
 # Developer Tool
 brew install zsh
