@@ -39,7 +39,6 @@ brew install python3
 brew install scala
 brew install sbt
 brew install go
-brew install dep
 brew install lua
 brew install nodebrew
 
