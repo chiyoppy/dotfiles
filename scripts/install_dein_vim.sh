@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 
 DEIN_VIM_INSTALLER_PATH=/tmp/dein_vim_installer.sh
 
