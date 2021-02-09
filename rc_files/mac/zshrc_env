@@ -1,6 +1,8 @@
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+alias rm=trash
+
 # zshrc for Mac
 alias ls="ls -G"
 alias "flushdns=sudo killall -HUP mDNSResponder"
