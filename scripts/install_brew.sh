@@ -11,15 +11,15 @@ if ! [ "type brew" ]; then
 fi
 
 # Upgrade brews
-brew upgrade
+brew update
 
 # Common Tool
 brew install tree
-brew install fcrackzip
 brew install ffmpeg
 brew install youtube-dl
 brew install jq
 brew install trash
+brew install telnet
 
 # Developer Tool
 brew install zsh
@@ -36,16 +36,10 @@ brew install yarn
 # Programming Language
 brew install php
 brew install python3
-brew install scala
-brew install sbt
 brew install go
 brew install lua
 brew install nodebrew
-
-# Library manager
 brew install maven
-
-# Language provided by xxenv
 brew install rbenv ruby-build
 
 # Editor
