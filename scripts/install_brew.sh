@@ -33,6 +33,7 @@ brew install wget curl
 brew install nmap
 brew install ttyrec
 brew install yarn
+brew install awscli
 
 # Programming Language
 brew install php
