@@ -9,7 +9,4 @@
 # Generate gitconfig_local
 ./scripts/generate_gitconfig_local.sh
 
-# Setup zsh completions
-./scripts/setup_completions.sh
-
 echo All process has done!

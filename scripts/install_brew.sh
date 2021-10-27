@@ -20,6 +20,7 @@ brew install youtube-dl
 brew install jq
 brew install trash
 brew install telnet
+brew install zsh-completions
 
 # Developer Tool
 brew install zsh

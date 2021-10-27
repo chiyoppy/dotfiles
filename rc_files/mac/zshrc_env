@@ -1,15 +1,14 @@
 # iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# alias
 alias rm=trash
-
-# zshrc for Mac
 alias ls="ls -G"
 alias "flushdns=sudo killall -HUP mDNSResponder"
 
 # Homebrew
-export PATH=/usr/local/bin:$PATH
-export PATH=/usr/local/sbin:$PATH
+eval "$(/opt/homebrew/bin/brew shellenv)"
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
 
 # golang
 export GOPATH=$HOME/go
@@ -22,8 +21,12 @@ export PATH=~/.composer/vendor/bin:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # zsh completions
-fpath=( /usr/local/share/zsh-completions(N-/) /usr/local/share/zsh/functions(N-/) )
-export fpath
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh-completions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
 
 # peco
 function peco-select-history() {

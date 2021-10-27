@@ -1,12 +1,6 @@
 export LANG=ja_JP.UTF-8
 export EDITOR=vim
 
-if [ -d ${HOME}/.zsh/zsh-completions/src ] ; then
-  fpath=(${HOME}/.zsh/zsh-completions/src $fpath)
-fi
-autoload -U compinit
-compinit
-
 PROMPT="%F{green}%n%F{magenta} | %F{yello}%m%F{magenta} | %F{cyan}%~%F{magenta} > %f"
 PROMPT2="%_%% "
 SPROMPT="%r is correct? [n,y,a,e]: "
