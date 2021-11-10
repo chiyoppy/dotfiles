@@ -23,17 +23,8 @@ $ cd .dotfiles
 
 # then just run bootstrap.sh
 $ ./bootstrap.sh
-```
 
-### Install NeoBundle
-
-`.vimrc` file uses NeoBundle( https://github.com/Shougo/neobundle.vim )
-
-Open Vim and run the following command in normal mode.
-
-`:NeoBundleInstall`
-
-## Included files
-
-```bash
+# when MacOS
+$ cd homebrew
+$ brew bundle
 ```
