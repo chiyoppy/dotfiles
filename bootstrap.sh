@@ -1,5 +1,7 @@
 #/bin/zsh
 
+echo "NOTE: install dein.vim manually https://github.com/Shougo/dein-installer.vim"
+
 # Link rc-files
 ./scripts/link_rc_files.sh
 
