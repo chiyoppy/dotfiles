@@ -1,5 +1,4 @@
-" Ward off unexpected things that your distro might have made, as
-" well as sanely reset options when re-sourcing .vimrc
+" ---------------------------------------------------------------------------------------------------------------------
 set nocompatible
 
 " Set Dein base path (required)
@@ -52,7 +51,7 @@ if dein#check_install()
  call dein#install()
 endif
 
-
+" ---------------------------------------------------------------------------------------------------------------------
 " file encodings
 set encoding=utf-8
 set fileencodings=utf-8,cp932,euc-jp
@@ -78,20 +77,20 @@ set nobackup
 set writebackup
 set history=50
 set hlsearch
-autocmd BufWritePre * :%s/\s\+$//e "truncate line-tail space(s)
 set autoindent
 set smartindent
 set expandtab
 set tabstop=2
 set shiftwidth=2
 set ignorecase
+autocmd BufWritePre * :%s/\s\+$//e "truncate line-tail space(s)
 
 augroup filetypedetect
   " override tab size by detecting file type
   au BufNewFile,BufRead *.php setlocal tabstop=4 shiftwidth=4
 augroup END
 
-
+" ---------------------------------------------------------------------------------------------------------------------
 " PLUGIN: Shougo/ddc.vim
 call ddc#custom#patch_global('ui', 'native')
 call ddc#custom#patch_global('sources', ['around'])
@@ -109,16 +108,6 @@ call ddc#custom#patch_global('sourceParams', #{
       \   around: #{ maxSize: 500 },
       \ })
 
-" Customize settings on a filetype
-call ddc#custom#patch_filetype(['c', 'cpp'], 'sources',
-      \ ['around', 'clangd'])
-call ddc#custom#patch_filetype(['c', 'cpp'], 'sourceOptions', #{
-      \   clangd: #{ mark: 'C' },
-      \ })
-call ddc#custom#patch_filetype('markdown', 'sourceParams', #{
-      \   around: #{ maxSize: 100 },
-      \ })
-
 " Mappings
 " <TAB>: completion.
 inoremap <silent><expr> <TAB>
@@ -132,14 +121,13 @@ inoremap <expr><S-TAB>  pumvisible() ? '<C-p>' : '<C-h>'
 " Use ddc.
 call ddc#enable()
 
-
 " PLUGIN: Yggdroot/indentLine
 let g:indentLine_color_term = 239
 
 " PLUGIN: junegunn/vim-easy-align
-vmap <Enter> <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 " PLUGIN: altercation/vim-colors-solarized
 set background=dark
 colorscheme solarized
-
