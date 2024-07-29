@@ -6,4 +6,6 @@
 # Generate gitconfig_local
 ./scripts/generate_gitconfig_local.sh
 
+./scripts/install-vim-colors-solarized.sh
+
 echo All process has done!
